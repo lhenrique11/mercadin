@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "762402133619",
+    "project_id": "mercadin-9d47b",
+    "storage_bucket": "mercadin-9d47b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762402133619:android:623296cb01839e34fc7c06",
+        "android_client_info": {
+          "package_name": "com.fragmento.mercadin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762402133619-cvi2lb1v83652sgsar8gtahu0dmvj242.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP9teLLJ2uxLnwHy3bM0EduL5k5gSGWC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762402133619-cvi2lb1v83652sgsar8gtahu0dmvj242.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762402133619:android:1d838ea018bb3bb8fc7c06",
+        "android_client_info": {
+          "package_name": "com.fragmento.mercadinapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762402133619-cvi2lb1v83652sgsar8gtahu0dmvj242.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP9teLLJ2uxLnwHy3bM0EduL5k5gSGWC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762402133619-cvi2lb1v83652sgsar8gtahu0dmvj242.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
