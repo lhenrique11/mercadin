@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mercadin/savegnagopage.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -23,52 +23,6 @@ class _HomeCampinasState extends State<HomeCampinas> {
   child: ListView(
     scrollDirection: Axis.horizontal,
     children: [
-
-      FadeIn(
-        duration: const Duration(seconds: 1),
-        curve: Curves.easeIn,
-        child: Container(
-          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 5.0, 0.0),
-          width: 150.0,
-          decoration: BoxDecoration(
-            color:Colors.white,
-            borderRadius: BorderRadius.circular((20.0))
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-
-              Container(
-                margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                decoration: BoxDecoration(
-                  color:Colors.white,
-                  borderRadius: BorderRadius.circular((20.0))
-                ),
-                child: Image.asset('images/paulistão.png', width: 130.0, height: 130.0,) ,
-              ),
-
-              Container(
-                margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                height: 50.0,
-                width: 100.0,
-                decoration: BoxDecoration(
-                  color:Colors.black,
-                  borderRadius: BorderRadius.circular((40.0))
-                ),
-                child: TextButton(
-                onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
-                }, 
-                child: Text('Ofertas', 
-                style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
-              ) ,
-              )
-              
-            ],
-          ),
-        ),
-      ),
 
       FadeIn(
         duration: const Duration(seconds: 1),
@@ -104,7 +58,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Savegnago()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
