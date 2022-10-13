@@ -1,6 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mercadin/arenapage.dart';
+import 'package:mercadin/assaipage.dart';
+import 'package:mercadin/atacadaopage.dart';
+import 'package:mercadin/caetanopage.dart';
+import 'package:mercadin/carrefourpage.dart';
+import 'package:mercadin/covabrapage.dart';
+import 'package:mercadin/dalbenpage.dart';
+import 'package:mercadin/diapage.dart';
+import 'package:mercadin/extrapage.dart';
+import 'package:mercadin/goodbompage.dart';
+import 'package:mercadin/higapage.dart';
+import 'package:mercadin/lavapespage.dart';
+import 'package:mercadin/makropage.dart';
+import 'package:mercadin/miniextrapage.dart';
+import 'package:mercadin/obapage.dart';
+import 'package:mercadin/pagemenospage.dart';
+import 'package:mercadin/samspage.dart';
+import 'package:mercadin/saovicentepage.dart';
 import 'package:mercadin/savegnagopage.dart';
+import 'package:mercadin/sondapage.dart';
+import 'package:mercadin/taquaralpage.dart';
+import 'package:mercadin/tendapage.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
 import 'package:iconsax/iconsax.dart';
@@ -104,7 +125,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Dia()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -151,7 +172,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const SaoVicente()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -197,7 +218,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Dalben()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -243,7 +264,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Sonda()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -289,7 +310,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const PagueMenos()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -335,7 +356,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const MiniExtra()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -381,7 +402,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Oba()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -427,7 +448,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const GoodBom()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -473,7 +494,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Covabra()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -519,7 +540,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Lavapes()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -565,7 +586,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Caetano()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -611,7 +632,7 @@ class _HomeCampinasState extends State<HomeCampinas> {
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Taquaral()));
                 }, 
                 child: Text('Ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
@@ -673,7 +694,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Carrefour()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
@@ -722,7 +743,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Atacadao()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
@@ -771,7 +792,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Assai()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
@@ -821,7 +842,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Tenda()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
@@ -870,7 +891,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Arena()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
@@ -919,7 +940,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Makro()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
@@ -968,7 +989,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Sams()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
@@ -1017,7 +1038,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Higa()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
@@ -1066,7 +1087,7 @@ Widget atacadoList = Container(
                 ),
                 child: TextButton(
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeCampinas()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Extra()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
