@@ -103,6 +103,9 @@ class _HigaState extends State<Higa> {
                               width: 400.0,
                               height: 200.0,
                               decoration: BoxDecoration(
+                                image: const DecorationImage(image: AssetImage('images/compras.jpg'),
+                                fit: BoxFit.fitWidth,
+                                ),
                                 color:Colors.lightGreen[400],
                                 borderRadius: BorderRadius.circular(20.0), 
                               ),
@@ -119,14 +122,19 @@ class _HigaState extends State<Higa> {
                                                   
                                   title: Text(data["produto"] ?? "",
                                     style: GoogleFonts.sen(
-                                      color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.w500
+                                      color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.bold
                                     ) ,
                                   ),
+                                  subtitle: Text(data["validade"] ?? "",
+                                    style: GoogleFonts.sen(
+                                      color: Colors.white, fontSize: 15.0, fontWeight: FontWeight.bold
+                                    ) ,
+                                  ), 
                                   trailing: Container(
                                     width: 100.0,
                                     height: 50.0,
                                     decoration: BoxDecoration(
-                                      color:Colors.green[800],
+                                      color:Colors.grey[100],
                                       borderRadius: BorderRadius.circular(20.0)
                                     ),
                                     child: TextButton(

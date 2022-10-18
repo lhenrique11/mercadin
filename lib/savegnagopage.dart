@@ -103,11 +103,14 @@ class _SavegnagoState extends State<Savegnago> {
                               width: 400.0,
                               height: 200.0,
                               decoration: BoxDecoration(
+                                image: const DecorationImage(image: AssetImage('images/compras.jpg'),
+                                fit: BoxFit.fitWidth,
+                                ),
                                 color:Colors.lightGreen[400],
                                 borderRadius: BorderRadius.circular(20.0), 
                               ),
                               child: ListView(
-                              padding: const EdgeInsets.fromLTRB(00.0, 70.0, 0.0, 0.0),  
+                              padding: const EdgeInsets.fromLTRB(00.0, 60.0, 0.0, 0.0),  
                               shrinkWrap: true,
                               physics: const NeverScrollableScrollPhysics(),
                               scrollDirection: Axis.vertical,
@@ -119,14 +122,19 @@ class _SavegnagoState extends State<Savegnago> {
                                                   
                                   title: Text(data["produto"] ?? "",
                                     style: GoogleFonts.sen(
-                                      color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.w500
+                                      color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.bold
                                     ) ,
                                   ),
+                                  subtitle: Text(data["validade"] ?? "",
+                                    style: GoogleFonts.sen(
+                                      color: Colors.white, fontSize: 15.0, fontWeight: FontWeight.bold
+                                    ) ,
+                                  ), 
                                   trailing: Container(
                                     width: 100.0,
                                     height: 50.0,
                                     decoration: BoxDecoration(
-                                      color:Colors.green[800],
+                                      color:Colors.grey[100],
                                       borderRadius: BorderRadius.circular(20.0)
                                     ),
                                     child: TextButton(
@@ -134,7 +142,7 @@ class _SavegnagoState extends State<Savegnago> {
                                     //icon: const Icon(Iconsax.money, color: Colors.white, size: 20.0,), 
                                     child: Text(data["valor"] ?? "",
                                     style: GoogleFonts.sen(
-                                      color: Colors.white, fontSize: 15.0, fontWeight: FontWeight.bold
+                                      color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.bold
                                     ) ,
                                   ),
                                   ),
