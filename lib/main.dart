@@ -1,15 +1,16 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mercadin/homecampinas.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 
 
 void main() async {
 WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+await Firebase.initializeApp();
+
 
   runApp(
     const MaterialApp(
@@ -27,9 +28,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-
-
-
 
 
   @override

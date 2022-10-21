@@ -1,10 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 
 class Lavapes extends StatefulWidget {
@@ -15,6 +16,22 @@ class Lavapes extends StatefulWidget {
 }
 
 class _LavapesState extends State<Lavapes> {
+
+  
+final BannerAd myBanner = BannerAd(
+  adUnitId: Platform.isAndroid ? 'ca-app-pub-4975130382486636/8779045781':
+   'ca-app-pub-3940256099942544/2934735716',
+  size: AdSize.banner,
+  request: const AdRequest(),
+  listener: const BannerAdListener(),
+);
+
+@override
+  void initState(){
+  super.initState();
+    myBanner.load();
+}
+
 
   
   @override
@@ -252,6 +269,16 @@ class _LavapesState extends State<Lavapes> {
                     }
                   ),
 
+                  const Divider(color: Colors.transparent,),
+                  const Divider(color: Colors.transparent,),
+
+                  SizedBox(
+                  width: 468.0,
+                  height: 60.0,
+                  child: AdWidget(ad: myBanner),
+                  ),
+
+                  const Divider(color: Colors.transparent,),
                   
                 ],
               ),

@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:mercadin/arenapage.dart';
 import 'package:mercadin/assaipage.dart';
 import 'package:mercadin/atacadaopage.dart';
@@ -35,6 +38,23 @@ class HomeCampinas extends StatefulWidget {
 }
 
 class _HomeCampinasState extends State<HomeCampinas> {
+
+  final BannerAd myBanner = BannerAd(
+  adUnitId: Platform.isAndroid ? 'ca-app-pub-4975130382486636/5437770418':
+   'ca-app-pub-3940256099942544/2934735716',
+  size: AdSize.banner,
+  request: const AdRequest(),
+  listener: const BannerAdListener(),
+);
+
+@override
+  void initState(){
+
+  super.initState();
+    myBanner.load();
+}
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -1998,6 +2018,15 @@ Widget siteMercados = Container(
                   const Divider(color: Colors.transparent,),
                   const Divider(color: Colors.transparent,),
                   const Divider(color: Colors.transparent,),
+
+                  SizedBox(
+                  width: 468.0,
+                  height: 60.0,
+                  child: AdWidget(ad: myBanner),
+                  ),
+
+                  const Divider(color: Colors.transparent,),
+
 
                 ]
               )
