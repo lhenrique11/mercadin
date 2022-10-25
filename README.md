@@ -1,16 +1,20 @@
-# mercadin
+# Mercadin
 
-A new Flutter project.
+Tenha as principais ofertas de supermercado na sua mão!
 
-## Getting Started
+As principais ofertas dos mais diversos supermercados e dos principais atacadistas com a praticidade de estar na palma da sua mão!
 
-This project is a starting point for a Flutter application.
+Folhetos? Deixa pra lá! As ofertas estão na palma da sua mão! Confira já!
 
-A few resources to get you started if this is your first Flutter project:
+## Tecnologias Usadas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Para este projeto foram usadas as seguintes tecnologias:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Dart
+- Firebase
+- Outros Recursos
+
+## Google Play
+
+[![Play Store](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.fragmento.mercadin)
+
