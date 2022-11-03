@@ -11,7 +11,6 @@ import 'package:mercadin/carrefourpage.dart';
 import 'package:mercadin/covabrapage.dart';
 import 'package:mercadin/dalbenpage.dart';
 import 'package:mercadin/diapage.dart';
-import 'package:mercadin/extrapage.dart';
 import 'package:mercadin/goodbompage.dart';
 import 'package:mercadin/higapage.dart';
 import 'package:mercadin/lavapespage.dart';
@@ -20,7 +19,6 @@ import 'package:mercadin/miniextrapage.dart';
 import 'package:mercadin/obapage.dart';
 import 'package:mercadin/pagemenospage.dart';
 import 'package:mercadin/samspage.dart';
-import 'package:mercadin/saovicentepage.dart';
 import 'package:mercadin/savegnagopage.dart';
 import 'package:mercadin/sondapage.dart';
 import 'package:mercadin/taquaralpage.dart';
@@ -157,52 +155,6 @@ class _HomeCampinasState extends State<HomeCampinas> {
         ),
       ),
 
-
-      FadeIn(
-        duration: const Duration(seconds: 1),
-        curve: Curves.easeIn,
-        child: Container(
-          margin: const EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 0.0),
-          width: 150.0,
-          decoration: BoxDecoration(
-            color:Colors.white,
-            borderRadius: BorderRadius.circular((20.0))
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-
-              Container(
-                margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                decoration: BoxDecoration(
-                  color:Colors.white,
-                  borderRadius: BorderRadius.circular((20.0))
-                ),
-                child: Image.asset('images/sãovicente.png', width: 130.0, height: 130.0,) ,
-              ),
-
-              Container(
-                margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                height: 50.0,
-                width: 100.0,
-                decoration: BoxDecoration(
-                  color:Colors.black,
-                  borderRadius: BorderRadius.circular((40.0))
-                ),
-                child: TextButton(
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const SaoVicente()));
-                }, 
-                child: Text('Ofertas', 
-                style: GoogleFonts.sen(color: Colors.white, fontSize: 13.0 ),)
-              ) ,
-              )
-              
-            ],
-          ),
-        ),
-      ),
 
       FadeIn(
         duration: const Duration(seconds: 1),
@@ -1059,55 +1011,6 @@ Widget atacadoList = Container(
                 child: TextButton(
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const Higa()));
-                }, 
-                child: Text('Veja as ofertas', 
-                style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)
-              ) ,
-              )
-              
-            ],
-          ),
-        ),
-      ),
-
-      FadeIn(
-        duration: const Duration(seconds: 1),
-        curve: Curves.easeIn,
-        child: Container(
-          margin: const EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 0.0),
-          width: 350.0,
-          decoration: BoxDecoration(
-            color:Colors.lightGreen[400],
-            borderRadius: BorderRadius.circular((20.0))
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-
-              Container(
-                margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                width: 110.0,
-                height: 110.0,
-                decoration: BoxDecoration(
-                  color:Colors.white,
-                  borderRadius: BorderRadius.circular((20.0))
-                ),
-                child: Image.asset('images/extra.png',),
-                
-              ),
-
-              Container(
-                margin: const EdgeInsets.fromLTRB(40.0, 0.0, 0.0, 0.0),
-                height: 50.0,
-                width: 150.0,
-                decoration: BoxDecoration(
-                  color:Colors.green[800],
-                  borderRadius: BorderRadius.circular((40.0))
-                ),
-                child: TextButton(
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Extra()));
                 }, 
                 child: Text('Veja as ofertas', 
                 style: GoogleFonts.sen(color: Colors.white, fontSize: 15.0 ),)

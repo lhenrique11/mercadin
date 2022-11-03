@@ -125,7 +125,7 @@ class _AtacadaoState extends State<Atacadao> {
                                 borderRadius: BorderRadius.circular(20.0), 
                               ),
                               child: ListView(
-                              padding: const EdgeInsets.fromLTRB(00.0, 70.0, 0.0, 0.0),  
+                              padding: const EdgeInsets.fromLTRB(00.0, 50.0, 0.0, 0.0),  
                               shrinkWrap: true,
                               physics: const NeverScrollableScrollPhysics(),
                               scrollDirection: Axis.vertical,
@@ -144,7 +144,7 @@ class _AtacadaoState extends State<Atacadao> {
                                     width: 100.0,
                                     height: 50.0,
                                     decoration: BoxDecoration(
-                                      color:Colors.green[800],
+                                      color:Colors.grey[100],
                                       borderRadius: BorderRadius.circular(20.0)
                                     ),
                                     child: TextButton(
@@ -152,7 +152,7 @@ class _AtacadaoState extends State<Atacadao> {
                                     //icon: const Icon(Iconsax.money, color: Colors.white, size: 20.0,), 
                                     child: Text(data["valor"] ?? "",
                                     style: GoogleFonts.sen(
-                                      color: Colors.white, fontSize: 15.0, fontWeight: FontWeight.bold
+                                      color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.bold
                                     ) ,
                                   ),
                                   ),
@@ -246,7 +246,7 @@ class _AtacadaoState extends State<Atacadao> {
                                     width: 100.0,
                                     height: 50.0,
                                     decoration: BoxDecoration(
-                                      color:Colors.grey[100],
+                                      color:Colors.green[800],
                                       borderRadius: BorderRadius.circular(20.0)
                                     ),
                                     child: TextButton(

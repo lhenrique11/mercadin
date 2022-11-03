@@ -127,7 +127,7 @@ final BannerAd myBanner = BannerAd(
                                 borderRadius: BorderRadius.circular(20.0), 
                               ),
                               child: ListView(
-                              padding: const EdgeInsets.fromLTRB(00.0, 70.0, 0.0, 0.0),  
+                              padding: const EdgeInsets.fromLTRB(00.0, 50.0, 0.0, 0.0),  
                               shrinkWrap: true,
                               physics: const NeverScrollableScrollPhysics(),
                               scrollDirection: Axis.vertical,
@@ -159,7 +159,7 @@ final BannerAd myBanner = BannerAd(
                                     //icon: const Icon(Iconsax.money, color: Colors.white, size: 20.0,), 
                                     child: Text(data["valor"] ?? "",
                                     style: GoogleFonts.sen(
-                                      color: Colors.white, fontSize: 15.0, fontWeight: FontWeight.bold
+                                      color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.bold
                                     ) ,
                                   ),
                                   ),

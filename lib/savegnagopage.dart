@@ -126,7 +126,7 @@ class _SavegnagoState extends State<Savegnago> {
                                 borderRadius: BorderRadius.circular(20.0), 
                               ),
                               child: ListView(
-                              padding: const EdgeInsets.fromLTRB(00.0, 60.0, 0.0, 0.0),  
+                              padding: const EdgeInsets.fromLTRB(00.0, 50.0, 0.0, 0.0),  
                               shrinkWrap: true,
                               physics: const NeverScrollableScrollPhysics(),
                               scrollDirection: Axis.vertical,
